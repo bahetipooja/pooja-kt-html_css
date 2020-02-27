@@ -1,0 +1,52 @@
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+#phone_number_div {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.mobile_icon {
+  width: 36px;
+  height: 36px;
+}
+
+#main_input_form {
+  height: 100%;
+  background-color: #03cc04;
+  color: #ffffff;
+}
+
+#main_image_div {
+  height: 100%;
+  background-image: url("assets/images/main.jpg");
+}
+
+#main_image_overlay {
+  height: 100%;
+  background-color: rgba(189,183,107,0.4);
+}
+
+.card_icon {
+  width: 64px;
+  display: block;
+  padding-top: 20px;
+}
+
+.custom_bg_light {
+  background-color: #eee;
+}
+
+.custom_ul {
+  padding-left: 0;
+  list-style: none;
+}

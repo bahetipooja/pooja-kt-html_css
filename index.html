@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Pooja Baheti" />
+    <meta name="description" content="RealState Website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Realstate</title>
+
+    <link href="assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Mobile Number Div -->
+    <div class="container-fluid">
+      <div id="phone_number_div">
+        <img
+          src="assets/icons/mobile-phone-icon-png-0.jpg.png"
+          alt="Mobile Phone Icon"
+          class="mobile_icon"
+        />
+        &nbsp;
+        <span class="text-secondary">+91 91234 56789</span>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-white">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/logo.jpg" alt=" Brand Logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-auto px-3">
+            <a class="nav-link text-success font-weight-bold" href="#">Home</a>
+          </li>
+          <li class="nav-item mx-auto px-3">
+            <a class="nav-link" href="#">Properties</a>
+          </li>
+          <li class="nav-item mx-auto px-3">
+            <a class="nav-link" href="#">Agent</a>
+          </li>
+          <li class="nav-item mx-auto px-3">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item mx-auto px-3">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- First Section -->
+    <section>
+      <div class="container-fluid px-0">
+        <div class="row mx-0">
+          <div class="col-12 col-md-8 col-lg-6 px-0">
+            <div id="main_input_form" class="px-3 py-3">
+              <h2>Search Properties</h2>
+              <form class="my-3">
+                <div class="form-group row">
+                  <label for="form_keyword" class="col-md-3 col-form-label"
+                    >Keyword</label
+                  >
+                  <div class="col-md-9">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="form_keyword"
+                      placeholder="Keyword"
+                    />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label
+                    for="form_property_status"
+                    class="col-md-3 col-form-label"
+                    >Property Status</label
+                  >
+                  <div class="col-md-9">
+                    <select id="form_property_status" class="form-control">
+                      <option>Any</option>
+                      <option>Option 1</option>
+                      <option>Option 2</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label
+                    for="form_property_type"
+                    class="col-md-3 col-form-label"
+                    >Property Type</label
+                  >
+                  <div class="col-md-9">
+                    <select id="form_property_type" class="form-control">
+                      <option>Any</option>
+                      <option>Option 1</option>
+                      <option>Option 2</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="form_location" class="col-md-3 col-form-label"
+                    >Location</label
+                  >
+                  <div class="col-md-9">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="form_location"
+                      placeholder="Location"
+                    />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="form_price_1" class="col-md-3 col-form-label"
+                    >Price</label
+                  >
+                  <div class="col-md-9">
+                    <div class="row">
+                      <div class="col-6">
+                        <select id="form_price_1" class="form-control">
+                          <option>Any</option>
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                        </select>
+                      </div>
+                      <div class="col-6">
+                        <select id="form_price_2" class="form-control">
+                          <option>Any</option>
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="form_bedrooms_1" class="col-md-3 col-form-label"
+                    >Bedrooms</label
+                  >
+                  <div class="col-md-9">
+                    <div class="row">
+                      <div class="col-6">
+                        <select id="form_bedrooms_1" class="form-control">
+                          <option>Any</option>
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                        </select>
+                      </div>
+                      <div class="col-6">
+                        <select id="form_bedrooms_2" class="form-control">
+                          <option>Any</option>
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="form_bathrooms_1" class="col-md-3 col-form-label"
+                    >Bathrooms</label
+                  >
+                  <div class="col-md-9">
+                    <div class="row">
+                      <div class="col-6">
+                        <select id="form_bathrooms_1" class="form-control">
+                          <option>Any</option>
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                        </select>
+                      </div>
+                      <div class="col-6">
+                        <select id="form_bathrooms_2" class="form-control">
+                          <option>Any</option>
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="form_area_1" class="col-md-3 col-form-label"
+                    >Area</label
+                  >
+                  <div class="col-md-9">
+                    <div class="row">
+                      <div class="col-6">
+                        <select id="form_area_1" class="form-control">
+                          <option>Any</option>
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                        </select>
+                      </div>
+                      <div class="col-6">
+                        <select id="form_area_2" class="form-control">
+                          <option>Any</option>
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-9 offset-md-3">
+                    <button type="button" class="btn btn-dark btn-block">
+                      Search
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-6 px-0 d-none d-md-block">
+            <div id="main_image_div">
+              <div id="main_image_overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card border-0">
+              <div class="row no-gutters">
+                <div class="col-2">
+                  <img
+                    src="assets/icons/791899_start_512x512.png"
+                    alt="Icon"
+                    class="card_icon mx-auto"
+                  />
+                </div>
+                <div class="col-10">
+                  <div class="card-body">
+                    <h5 class="card-title">Lorem ipsum</h5>
+                    <p class="card-text text-secondary">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Maecenas imperdiet velit nisi.
+                    </p>
+                    <p class="text-success"><a href="#">Learn More</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card border-0">
+              <div class="row no-gutters">
+                <div class="col-2">
+                  <img
+                    src="assets/icons/Streamline-17-512.png"
+                    alt="Icon"
+                    class="card_icon mx-auto"
+                  />
+                </div>
+                <div class="col-10">
+                  <div class="card-body">
+                    <h5 class="card-title">Lorem ipsum</h5>
+                    <p class="card-text text-secondary">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Maecenas imperdiet velit nisi.
+                    </p>
+                    <p class="text-success"><a href="#">Learn More</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card border-0">
+              <div class="row no-gutters">
+                <div class="col-2">
+                  <img
+                    src="assets/icons/wallet-57-106202.png"
+                    alt="Icon"
+                    class="card_icon mx-auto"
+                  />
+                </div>
+                <div class="col-10">
+                  <div class="card-body">
+                    <h5 class="card-title">Lorem ipsum</h5>
+                    <p class="card-text text-secondary">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Maecenas imperdiet velit nisi.
+                    </p>
+                    <p class="text-success"><a href="#">Learn More</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card border-0">
+              <div class="row no-gutters">
+                <div class="col-2">
+                  <img
+                    src="assets/icons/Data-Pie-icon.png"
+                    alt="Icon"
+                    class="card_icon mx-auto"
+                  />
+                </div>
+                <div class="col-10">
+                  <div class="card-body">
+                    <h5 class="card-title">Lorem ipsum</h5>
+                    <p class="card-text text-secondary">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Maecenas imperdiet velit nisi.
+                    </p>
+                    <p class="text-success"><a href="#">Learn More</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card border-0">
+              <div class="row no-gutters">
+                <div class="col-2">
+                  <img
+                    src="assets/icons/React.js_logo-512.png"
+                    alt="Icon"
+                    class="card_icon mx-auto"
+                  />
+                </div>
+                <div class="col-10">
+                  <div class="card-body">
+                    <h5 class="card-title">Lorem ipsum</h5>
+                    <p class="card-text text-secondary">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Maecenas imperdiet velit nisi.
+                    </p>
+                    <p class="text-success"><a href="#">Learn More</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card border-0">
+              <div class="row no-gutters">
+                <div class="col-2">
+                  <img
+                    src="assets/icons/a50ce51c9e.png"
+                    alt="Icon"
+                    class="card_icon mx-auto"
+                  />
+                </div>
+                <div class="col-10">
+                  <div class="card-body">
+                    <h5 class="card-title">Lorem ipsum</h5>
+                    <p class="card-text text-secondary">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Maecenas imperdiet velit nisi.
+                    </p>
+                    <p class="text-success"><a href="#">Learn More</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-3">
+      <div class="custom_bg_light py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4 mb-4">
+              <h5>About Realstate</h5>
+              <p>
+                Lorem ipsum has been the industry's standard dummy text ever
+                since 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.
+              </p>
+            </div>
+            <div class="col-12 col-md-2 mb-4">
+              <h5>Links</h5>
+              <ul class="custom_ul d-none d-md-block">
+                <li class="py-2"><a>Home</a></li>
+                <li class="py-2"><a>Properties</a></li>
+                <li class="py-2"><a>Agent</a></li>
+                <li class="py-2"><a>Blog</a></li>
+                <li class="py-2"><a>Contact</a></li>
+              </ul>
+              <nav class="nav d-md-none">
+                <a class="nav-link pl-0 pr-2">Home</a>
+                <a class="nav-link pl-0 pr-2">Properties</a>
+                <a class="nav-link pl-0 pr-2">Agent</a>
+                <a class="nav-link pl-0 pr-2">Blog</a>
+                <a class="nav-link pl-0 pr-2">Contact</a>
+              </nav>
+            </div>
+            <div class="col-12 col-md-2 mb-4">
+              <h5>Information</h5>
+              <ul class="custom_ul d-none d-md-block">
+                <li class="py-2"><a>Terms & Conditions</a></li>
+                <li class="py-2"><a>License</a></li>
+                <li class="py-2"><a>Privacy & Policy</a></li>
+                <li class="py-2"><a>Contact Us</a></li>
+              </ul>
+              <nav class="nav d-md-none">
+                <a class="nav-link pl-0 pr-2">T & C</a>
+                <a class="nav-link pl-0 pr-2">License</a>
+                <a class="nav-link pl-0 pr-2">Privacy & Policy</a>
+                <a class="nav-link pl-0 pr-2">Contact Us</a>
+              </nav>
+            </div>
+            <div class="col-12 col-md-4">
+              <h5>Newsletter</h5>
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email"
+                  aria-label="User Email"
+                  aria-describedby="signup_button"
+                />
+                <div class="input-group-append">
+                  <button
+                    id="signup_button"
+                    type="button"
+                    class="btn btn-success"
+                  >
+                    Sign Up
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="bg-secondary text-white px-2 py-2">
+        <p class="text-center mb-0">
+          Copyright &copy; 2020 realstate. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="assets/js/jquery/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
